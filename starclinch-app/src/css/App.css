@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Prata');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn{
+  background-color: rgb(222, 45, 107);
+  color: aliceblue;
+  margin-right: 1.25rem;
+  border-radius: 0.625rem;
+  height: 2rem;
+  width: 12.5rem;
+  cursor: pointer;
+} 
+
+
+#logo{
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 1.25rem 0.192rem 0.312rem 0rem;
+}
+#logo1{
+  border-radius: 3.2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 1.8rem 1.8rem 1.8rem 1.8rem; 
+}
+
+#logo2{
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 0px 0.2rem 0.312rem 0.625rem;
+}
+
+
+.welcome{
+  margin-top:6rem;
+  text-align: center;
+  height:60vh;
+  font-family: 'Lobster', sans-serif;
+  font-size: xx-large;
+  color: rgb(216, 24, 124);
+}
+
+#booking{
+  background-color:  rgb(216, 24, 124);
+  padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+  border-radius: 3rem;
+  color: #f8f8f8;
+  cursor: pointer;
+  font-size: x-large;
+  font-family:'Lobster', sans-serif ;
+  transition: all 0.2s ease-in-out;
+}
+#booking:hover{
+  color: rgba(255, 255, 255, 1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 1.88rem, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.body1{
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: x-large;
+}
+
+.body2{
+  margin: 2rem 2rem 2rem 3rem;
+  font-size: large;
+}
+
+.body3{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1.25rem 1.25rem 2.5rem 1.25rem;
+  justify-content: space-around;
+  font-family: "Prata", sans-serif;
+}
+
+.body4{
+  color: dimgrey;
+  text-align: center;
+  font-family: cursive;
+  font-size: small;
+  margin: 1.25rem 1.25rem 1.25rem 1.25rem;
+}
+
+.event{
+  color: dimgrey;
+  font-family: "Prata", sans-serif;
+}
+.event2{
+  color: rgb(223, 223, 224);
+  font-family: cursive;
+  background-color: rgb(59, 57, 57);
+  border-radius: 3rem;
+  padding: 0.1rem;
+}
+
+.tac{
+  background-color: black;
+  color: aliceblue;
+  padding: 1.88rem 1.88rem 1.25rem 2rem;
+}
+.tac1{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.tac2{
+text-align: center;
+margin-bottom: 3.2rem;
+color: coral;
+}
+
+.tac3{
+  margin-top: 1.88rem;
+  margin-left: 2rem;
+  color: rgba(245, 241, 245, 0.967);
+  font-size: large;
+  font-family: 'Montserrat', sans-serif;
+  list-style-type: georgian;
+}
+
+.social{
+  margin: 1.25rem 1.25rem 1.25rem 3rem;
+  flex: 1 0 12rem;
+}
+
+.org{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button{
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+color:rgb(101, 58, 242)
+}
+button:hover{
+  color: rgb(216, 24, 124);
+}
+img{
+  width: 1.56rem;
+  height: 1.56rem;
+  margin-left: 1.25rem;
+}
+
+.ico{
+  height: 1.875rem;
+  width: 1.875rem;
+  display: flex;
+  flex-direction: row;
+  margin: 0.312rem 0.312rem 0.625rem 3.75rem;
+}
+ 
+
+
+
+
+/* Styles for screens larger than 768px */
+@media screen and (min-width: 768px) {
+  .rightDiv {
+    font-size: 24px;
+  }
+}
+
+/* Styles for screens smaller than 768px */
+
+@media screen and (max-width: 767px) {
+  .rightDiv {
+    flex-basis: calc(50% - 1.25rem);
+    font-size: 16px;
+  }
+}
