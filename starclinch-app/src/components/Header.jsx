@@ -16,22 +16,20 @@ function Header() {
         <li><NavLink to="/services" activeClassName="active" className="nav-link">Services</NavLink></li>
         <li><NavLink to="/contact" activeClassName="active" className="nav-link">Contact</NavLink></li>
       </ul>
-        <div className="menu">
-        <BurgerMenu right>
-            <div className="column">
+
+      <div className="menu">
+        <BurgerMenu right >
+            <div className='menu-design'>
               <Link to="/" activeClassName="active" className="menu-item">Home</Link>
-            </div>
-            <div className="column">
+            
               <Link to="/about" activeClassName="active" className="menu-item">About</Link>
-            </div>
-            <div className="column">
+            
               <Link to="/services" activeClassName="active" className="menu-item">Services</Link>
-            </div>
-            <div className="column">
+            
               <Link to="/contact" activeClassName="active" className="menu-item">Contact</Link>
-            </div>
+              </div>
           </BurgerMenu>
-        </div>
+          </div>
       </nav>
     </header>
   );

@@ -1,70 +1,193 @@
 import React from "react";
 import Celebrity from "./Celebrity";
 
-
 const Body = () => {
   const celebs = [
     {
-      name: "Adele",
-      image: "https://younghollywood.com/images/stories/adele(8).webp",
-      description:
-        "Adele is a British singer-songwriter known for her soulful voice.",
-      link: "https://en.wikipedia.org/wiki/Adele",
+      name: "Adele-Singer",
+      imgs: [
+        {
+          id: 0,
+          value: "https://younghollywood.com/images/stories/adele(8).webp",
+        },
+        {
+          id: 1,
+          value:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Suhani-Shah-oml-gallery-01.jpg/220px-Suhani-Shah-oml-gallery-01.jpg",
+        },
+        {
+          id: 2,
+          value:
+            "https://nypost.com/wp-content/uploads/sites/2/2022/11/Ed-Sheeran.jpg?quality=75&strip=all&w=744",
+        },
+      ],
+      description: "Loc:London    Event-No.:1728834",
     },
     {
-      name: "Ed Sheeran",
-      image:
-        "https://nypost.com/wp-content/uploads/sites/2/2022/11/Ed-Sheeran.jpg?quality=75&strip=all&w=744",
-      description:
-        "Ed Sheeran is an English singer-songwriter known for his acoustic pop hits.",
-      link: "https://en.wikipedia.org/wiki/Ed_Sheeran",
+      name: "Ed Sheeran-The Jazz",
+      imgs: [
+        {
+          id: 0,
+          value:
+            "https://nypost.com/wp-content/uploads/sites/2/2022/11/Ed-Sheeran.jpg?quality=75&strip=all&w=744",
+        },
+        {
+          id: 1,
+          value:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Suhani-Shah-oml-gallery-01.jpg/220px-Suhani-Shah-oml-gallery-01.jpg",
+        },
+        {
+          id: 2,
+          value:
+            "https://www.thestatesman.com/wp-content/uploads/2018/10/Tanmay-Bhat.png",
+        },
+      ],
+      description: "Loc:New-York      Event-No.:123734",
     },
     {
-      name: "Beyonce",
-      image:
-        "https://www.fijivillage.com/news_images/71507548063dad69a0a3c2988d2368.jpg",
-      description:
-        "Beyonce is an American singer, dancer, and actress known for her powerful voice and energetic performances.",
-      link: "https://en.wikipedia.org/wiki/Beyonc%C3%A9",
+      name: "Beyonce-Lori Singer",
+      imgs: [
+        {
+          id: 0,
+          value:
+            "https://www.fijivillage.com/news_images/71507548063dad69a0a3c2988d2368.jpg",
+        },
+        {
+          id: 1,
+          value:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Suhani-Shah-oml-gallery-01.jpg/220px-Suhani-Shah-oml-gallery-01.jpg",
+        },
+        {
+          id: 2,
+          value:
+            "https://www.thestatesman.com/wp-content/uploads/2018/10/Tanmay-Bhat.png",
+        },
+      ],
+      description: "Loc:California      Event-No.:12383734",
     },
     {
-      name: "Zakir Khan",
-      image: "https://www.dailypioneer.com/uploads/2021/story/images/big/zakir-khan-on-most-interesting-thing-about-being-stand-up-comic-2021-03-22.jpg",
-      description:"Zakir Khan is an Indian comedian. Famous for his gigs and emotional sets.",
-      link: "https://en.wikipedia.org/wiki/Zakir_Khan_(comedian)",
+      name: "Zakir Khan-Raw Comedy",
+      imgs: [
+        {
+          id: 0,
+          value:
+            "https://www.dailypioneer.com/uploads/2021/story/images/big/zakir-khan-on-most-interesting-thing-about-being-stand-up-comic-2021-03-22.jpg",
+        },
+        {
+          id: 1,
+          value:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Suhani-Shah-oml-gallery-01.jpg/220px-Suhani-Shah-oml-gallery-01.jpg",
+        },
+        {
+          id: 2,
+          value:
+            "https://nypost.com/wp-content/uploads/sites/2/2022/11/Ed-Sheeran.jpg?quality=75&strip=all&w=744",
+        },
+      ],
+      description: "Loc:Indore       Event-No.:197364",
     },
     {
-      name: "Tanmay Bhat",
-      image:
-        "https://www.thestatesman.com/wp-content/uploads/2018/10/Tanmay-Bhat.png",
-      description:
-        "Tanmay Bhat is an Indian YouTuber, comedian, scriptwriter, Actor, performer and producer",
-      link: "https://en.wikipedia.org/wiki/Tanmay_Bhat",
+      name: "Tanmay Bhat- Improv Comedy",
+      imgs: [
+        {
+          id: 0,
+          value:
+            "https://www.thestatesman.com/wp-content/uploads/2018/10/Tanmay-Bhat.png",
+        },
+        {
+          id: 1,
+          value:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Suhani-Shah-oml-gallery-01.jpg/220px-Suhani-Shah-oml-gallery-01.jpg",
+        },
+        {
+          id: 2,
+          value:
+            "https://th-i.thgim.com/public/incoming/lz6oys/article66667362.ece/alternates/FREE_1200/Yashraj%20Mukhate2.jpg",
+        },
+      ],
+      description: "Loc:Bengaluru     Event-No.:193834",
     },
     {
-      name: "Kapil Sharma",
-      image: "https://static.toiimg.com/photo/msid-94118633/94118633.jpg",
-      description: "Kapil Sharma is an Indian stand-up comedian, television host, actor, producer & singer",
-      link: "https://en.wikipedia.org/wiki/Kapil_Sharma",
+      name: "Kapil Sharma-Stand-Up Comedy",
+      imgs: [
+        {
+          id: 0,
+          value: "https://static.toiimg.com/photo/msid-94118633/94118633.jpg",
+        },
+        {
+          id: 1,
+          value:
+            "https://th-i.thgim.com/public/incoming/lz6oys/article66667362.ece/alternates/FREE_1200/Yashraj%20Mukhate2.jpg",
+        },
+        {
+          id: 2,
+          value:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Suhani-Shah-oml-gallery-01.jpg/220px-Suhani-Shah-oml-gallery-01.jpg",
+        },
+      ],
+      description: "Loc:Amritsar      Event-No.:32334",
     },
     {
-      name:"Bhuvan Bam",
-      image:"https://image.fresherslive.com/latestnews/2023/02/who-are-bhuvan-bam-parents-bhuvan-bam-biography-parents-name-and-more-63f7547bc1a5249667234-900.webp",
-      description:"Bhuvan Bam is an Indian comedian, writer, singer, actor, songwriter, and YouTube personality",
-      link:"https://en.wikipedia.org/wiki/Bhuvan_Bam"
+      name: "Bhuvan Bam-Youtuber",
+      imgs: [
+        {
+          id: 0,
+          value:
+            "https://upload.wikimedia.org/wikipedia/commons/b/b7/Bhuvan_Bam_at_Taaza_Khabar%27s_success_party_%28cropped%29.jpg",
+        },
+        {
+          id: 1,
+          value:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Suhani-Shah-oml-gallery-01.jpg/220px-Suhani-Shah-oml-gallery-01.jpg",
+        },
+        {
+          id: 2,
+          value: "https://static.toiimg.com/photo/msid-94118633/94118633.jpg",
+        },
+      ],
+      description: "Loc:Delhi      Event-No.:822334",
     },
     {
-      name:"Yashraj Mukhate",
-      image:"https://th-i.thgim.com/public/incoming/lz6oys/article66667362.ece/alternates/FREE_1200/Yashraj%20Mukhate2.jpg",
-      description:"Yashraj Mukhate is an Indian music producer, composer and social media personality.",
-      link:"https://en.wikipedia.org/wiki/Yashraj_Mukhate"
+      name: "Yashraj Mukhate-Music",
+      imgs: [
+        {
+          id: 0,
+          value:
+            "https://th-i.thgim.com/public/incoming/lz6oys/article66667362.ece/alternates/FREE_1200/Yashraj%20Mukhate2.jpg",
+        },
+        {
+          id: 1,
+          value:
+            "https://nypost.com/wp-content/uploads/sites/2/2022/11/Ed-Sheeran.jpg?quality=75&strip=all&w=744",
+        },
+        {
+          id: 2,
+          value:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Suhani-Shah-oml-gallery-01.jpg/220px-Suhani-Shah-oml-gallery-01.jpg",
+        },
+      ],
+      description: "Loc:Mumabi     Event-No.:187654",
     },
     {
-      name:"Suhani Shah",
-      image:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Suhani-Shah-oml-gallery-01.jpg/220px-Suhani-Shah-oml-gallery-01.jpg",
-      description:"Suhani Shah is an Indian mentalist, magician, and YouTuber",
-      link:"https://en.wikipedia.org/wiki/Suhani_Shah"
-    }
+      name: "Suhani Shah-Magician",
+      imgs: [
+        {
+          id: 0,
+          value:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Suhani-Shah-oml-gallery-01.jpg/220px-Suhani-Shah-oml-gallery-01.jpg",
+        },
+        {
+          id: 1,
+          value: "https://static.toiimg.com/photo/msid-94118633/94118633.jpg",
+        },
+        {
+          id: 2,
+          value:
+            "https://www.dailypioneer.com/uploads/2021/story/images/big/zakir-khan-on-most-interesting-thing-about-being-stand-up-comic-2021-03-22.jpg",
+        },
+      ],
+      description: "Loc:Mumbau     Event-No.:12764",
+    },
   ];
 
   return (
@@ -80,7 +203,8 @@ const Body = () => {
         <p> Driven by client feedback and ready to walk the extra mile.</p>
       </div>
       <br />
-      <hr /><br />
+      <hr />
+      <br />
       <div className="body1">
         <h1>Shortlist</h1>
       </div>
@@ -95,12 +219,14 @@ const Body = () => {
         </h2>
         <h2>
           Location: <span className="event">Delhi, India</span>
-        </h2><br />
+        </h2>
+        <br />
         <h2>
           Budget: <span className="event2">₹500,000</span>
         </h2>
       </div>
-       <hr /><br />
+      <hr />
+      <br />
       <div className="body1">
         <h1>Celebrities</h1>
       </div>
@@ -112,10 +238,9 @@ const Body = () => {
         {celebs.map((celeb) => (
           <Celebrity
             key={celeb.name}
-            image={celeb.image}
+            imgs={celeb.imgs}
             name={celeb.name}
             description={celeb.description}
-            link={celeb.link}
           />
         ))}
       </div>
@@ -124,7 +249,7 @@ const Body = () => {
           <h1>6000+ Users trust StarClinch.</h1>
         </div>
         <div className="tac2">
-          <p>Booking Terms & Conditions</p>
+          <p>No. Terms & Conditions</p>
         </div>
         <div className="tac1">
           <h2>BOOKING TERMS & CONDITIONS FOR CLIENT</h2>
